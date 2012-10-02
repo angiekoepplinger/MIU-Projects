@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--Angela Koepplinger-->
+<!--MIU: Term 1210-->
+<!--Project 2: Bronze App-->
+<!--Date: 10/04/12-->
+
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    
+    <title>Procurement Task Manager</title>
+    
+    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Mobile IE needs ClearType for smoothing fonts -->
+    <meta http-equiv="cleartype" content="on">
+    
+    <!-- StyleSheets under here -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+
+
+    
+    
+    <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+    <script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+    <!--Home Page-->
+    <div data-role="page" id="home">
+
+        <div data-role="header" data-position="fixed">
+            <h1>Task Manager</h1>
+        </div>
+
+        <div data-role="content" id="cta" style="margin-left:-13px;padding:0;margin-bottom:-65px;">
+            <a href="additem.html"<a href="#"><img src="images/cta.png"></a>
+        </div>
+
+        <div data-role="content">
+            <ul data-role="listview" data-filter="true">
+                 <li data-role="list-divider">Browse...</li>               
+                 <li><a href= "#maintenance" data-icon="arrow-r" data-role="button" data-iconpos="right">Maintenance</a></li>
+                <li><a href= "#product" data-icon="arrow-r" data-iconpos="right">Product</a></li>
+                <li><a href= "#rawmaterials" data-icon="arrow-r" data-iconpos="right">Raw Materials</a></li>
+                <li><a href= "#upgrade" data-icon="arrow-r" data-iconpos="right">Upgrade</a></li>
+                <li><a href= "#indirect" data-icon="arrow-r" data-iconpos="right">Indirect</a></li>
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed">       
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#" data-icon="info">About</a></li>
+                    <li><a href="#"  data-icon="grid">Newsfeed</a></li>
+                    <li><a href="additem.html" data-icon="plus">New Task</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+     <!--Maintenance page-->
+    <div data-role="page" id="maintenance" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Maintenance</h1>
+        </div>
+
+        
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+    <!-- JavaScript under here -->
+    
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+
+</body>
+</html>
+ 

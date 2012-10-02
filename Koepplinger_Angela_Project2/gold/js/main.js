@@ -1,6 +1,6 @@
 //Angela Koepplinger
 //MIU: Term 1210
-// Project 2
+// Project 2: Gold App
 //Date: 10/04/12
 
 //test push to working
