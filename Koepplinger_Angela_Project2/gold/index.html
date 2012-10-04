@@ -36,11 +36,11 @@
             <h1>Task Manager</h1>
         </div>
 
-        <div data-role="content" id="cta" style="margin-left:-13px;padding:0;margin-bottom:-65px;">
-            <a href="additem.html"<a href="#"><img src="images/cta.png"></a>
+        <div data-role="content" id="cta" >
+            <a href="additem.html" data-ajax="false"<a href="#"><img src="images/cta.png"></a>
         </div>
 
-        <div data-role="content">
+        <div data-role="content" >
             <ul data-role="listview" data-filter="true" data-inset="false" class="ui-listview" >
                 <li data-role="list-divider">Browse...</li>               
                 <li><a href= "#maintenance" data-icon="arrow-r" data-iconpos="right">
@@ -64,7 +64,7 @@
                 <ul>
                     <li><a href="#" data-icon="info">About</a></li>
                     <li><a href="#"  data-icon="grid">Newsfeed</a></li>
-                    <li><a href="additem.html" data-icon="plus">New Task</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
                     
                 </ul>
             </div>
@@ -81,22 +81,22 @@
             <div data-role="collapsible-set">
 
                 <div data-role="collapsible" data-theme="c">
-                    <h4>TES/SM</h4>
+                    <h4>TES: TES/SM</h4>
                     <p><a href="#">Task Details</a><p>
                 </div>
             
                 <div data-role="collapsible" data-theme="c">
-                    <h4>RMM/SM</h4>
+                    <h4>RMM: RMM/SM</h4>
                     <p><a href="#">Task Details</a><p>
                 </div>
                 
                 <div data-role="collapsible" data-theme="c">
-                    <h4>TES/SM</h4>
+                    <h4>TES: TES/SM</h4>
                     <p><a href="#">Task Details</a><p>
                 </div>
 
                 <div data-role="collapsible" data-theme="c">
-                    <h4>MIT/SM</h4>
+                    <h4>MIT: MIT/SM</h4>
                     <p><a href="#">Task Details</a><p>
                 </div>
             </div>
@@ -107,7 +107,175 @@
             <div data-role="navbar" data-position="fixed">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="additem.html" data-icon="plus">New Task</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Product Page-->
+    <div data-role="page" id="product" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Product</h1>
+        </div>
+
+        <div data-role"content">
+            <div data-role="collapsible-set">
+
+                <div data-role="collapsible" data-theme="c">
+                    <h4>CA: CA/SD</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+            
+                <div data-role="collapsible" data-theme="c">
+                    <h4>HUB: HUB/SRVRS</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+                
+                <div data-role="collapsible" data-theme="c">
+                    <h4>TES: Video CODEC</h4>           
+                    <p><a href="#">Task Details</a><p>
+                </div>
+
+                <div data-role="collapsible" data-theme="c">
+                    <h4>TES: Mobile Node 4</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Raw Materials Page-->
+    <div data-role="page" id="rawmaterials" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Raw Materials</h1>
+        </div>
+
+        <div data-role"content">
+            <div data-role="collapsible-set">
+
+                <div data-role="collapsible" data-theme="c">
+                    <h4>BLD: N/A</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+            
+                <div data-role="collapsible" data-theme="c">
+                    <h4>BLD: N/A</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+                
+                <div data-role="collapsible" data-theme="c">
+                    <h4>BLD: N/A</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+
+                <div data-role="collapsible" data-theme="c">
+                    <h4>BLD: N/A</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Upgrade Page-->
+    <div data-role="page" id="upgrade" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Upgrade</h1>
+        </div>
+
+        <div data-role"content">
+            <div data-role="collapsible-set">
+
+                <div data-role="collapsible" data-theme="c">
+                    <h4>RTS: Projector Upgrade</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+            
+                <div data-role="collapsible" data-theme="c">
+                    <h4>HUB: Firewall Upgrade</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+                
+                <div data-role="collapsible" data-theme="c">
+                    <h4>HUB: Rack/UPG</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+
+                <div data-role="collapsible" data-theme="c">
+                    <h4>TES: KVMoIP Upgrade</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Indirect-->
+    <div data-role="page" id="indirect" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Indirect</h1>
+        </div>
+
+        <div data-role"content">
+            <div data-role="collapsible-set">
+
+                <div data-role="collapsible" data-theme="c">
+                    <h4>HQ: In House</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+            
+                <div data-role="collapsible" data-theme="c">
+                    <h4>HQ: In House</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+                
+                <div data-role="collapsible" data-theme="c">
+                    <h4>HQ: In House</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+
+                <div data-role="collapsible" data-theme="c">
+                    <h4>HQ: In House</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
                 </ul>
             </div>
         </div>
