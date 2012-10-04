@@ -21,6 +21,7 @@
     
     <!-- StyleSheets under here -->
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jqmstyles.css" />
 
 
     
@@ -37,20 +38,33 @@
             <h1>Task Manager</h1>
         </div>
 
-        <div data-role="content" id="cta" style="margin-left:-13px;padding:0;margin-bottom:-65px;">
+        <div data-role="content" id="cta" >
             <a href="additem.html"<a href="#"><img src="images/cta.png"></a>
         </div>
 
+        
+        
         <div data-role="content">
-            <ul data-role="listview" data-filter="true">
-                 <li data-role="list-divider">Browse...</li>               
-                 <li><a href= "#maintenance" data-icon="arrow-r" data-role="button" data-iconpos="right">Maintenance</a></li>
-                <li><a href= "#product" data-icon="arrow-r" data-iconpos="right">Product</a></li>
-                <li><a href= "#rawmaterials" data-icon="arrow-r" data-iconpos="right">Raw Materials</a></li>
-                <li><a href= "#upgrade" data-icon="arrow-r" data-iconpos="right">Upgrade</a></li>
-                <li><a href= "#indirect" data-icon="arrow-r" data-iconpos="right">Indirect</a></li>
-            </ul>
-        </div>
+            <div class="ui-grid-b">
+                               
+                 <div class="ui-block-a"><a href= "#maintenance">
+                    <img src="imageslg/Maintenance.png" class="icon"/></a>
+                </div>
+                <div class="ui-block-b"><type<a href= "#product">
+                    <img src="imageslg/Product.png" class="icon"/></a>
+                </div>
+                <div class="ui-block-c"><a href= "#rawmaterials">
+                    <img src="imageslg/Raw Materials.png" class="icon"/></a>
+                </div>
+                <div class="ui-block-a"><a href= "#upgrade">
+                    <img src="imageslg/Upgrade.png" class="icon"/></a>
+                </div>
+                <div class="ui-block-b"><a href= "#indirect">
+                    <img src="imageslg/Indirect.png" class="icon"/></a>
+                </div>
+            </div> 
+        </div> 
+
 
         <div data-role="footer" data-position="fixed">       
             <div data-role="navbar" data-position="fixed">

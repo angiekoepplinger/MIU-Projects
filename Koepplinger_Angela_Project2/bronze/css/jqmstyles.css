@@ -1,0 +1,16 @@
+img.ui-li-thumb{
+	height: 40px;
+	width: 40px; 
+	margin: 0;
+	padding: 0;
+}
+.ui-li .ui-btn-text a.ui-link-inherit, .ui-li-static.ui-li{
+	min-height: 40px;
+	padding: 0;
+	margin-left: 50px
+}
+#cta {
+	margin: 0px;
+	margin-bottom: -3px;
+	padding: 0px;
+}
