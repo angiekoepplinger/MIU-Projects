@@ -37,20 +37,15 @@
         <div data-role="header" data-position="fixed">
             <h1>Task Manager</h1>
         </div>
-
         <div data-role="content" id="cta" >
             <a href="additem.html"<a href="#"><img src="images/cta.png"></a>
         </div>
-
-        
-        
-        <div data-role="content">
+        <div data-role="content" data-theme="a">
             <div class="ui-grid-b">
-                               
-                 <div class="ui-block-a"><a href= "#maintenance">
-                    <img src="imageslg/Maintenance.png" class="icon"/></a>
+                <div class="ui-block-a"><a href= "#maintenance">
+                    <img src="imageslg/Maintenance.png" class="icon"></a>
                 </div>
-                <div class="ui-block-b"><type<a href= "#product">
+                <div class="ui-block-b"><a href= "#product">
                     <img src="imageslg/Product.png" class="icon"/></a>
                 </div>
                 <div class="ui-block-c"><a href= "#rawmaterials">
@@ -62,10 +57,10 @@
                 <div class="ui-block-b"><a href= "#indirect">
                     <img src="imageslg/Indirect.png" class="icon"/></a>
                 </div>
+                <div class="ui-block-c">
+                </div>
             </div> 
         </div> 
-
-
         <div data-role="footer" data-position="fixed">       
             <div data-role="navbar" data-position="fixed">
                 <ul>
@@ -79,22 +74,229 @@
     </div>
 
      <!--Maintenance page-->
+
     <div data-role="page" id="maintenance" data-add-back-btn="true">
         <div data-role="header" data-position="fixed">
              <h1>Maintenance</h1>
+        </div> 
+        <div data-role="content">
+            <ul data-role="listview" data-filter="true" data-inset="true" class="ui-listview" >              
+                <li><a href="#tes-sm1" data-icon="arrow-r" data-iconpos="right">TES: TES/SM</a></li>
+                <li><a href="#rmm-sm" data-icon="arrow-r" data-iconpos="right">RMM: RMM/SM</a></li>
+                <li><a href="#tes-sm2" data-icon="arrow-r" data-iconpos="right">TES: TES/SM</a></li>
+                <li><a href="#mit-sm" data-icon="arrow-r" data-iconpos="right">MIT: MIT/SM</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Product page-->
+
+    <div data-role="page" id="product" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Product</h1>
+        </div> 
+        <div data-role="content">
+                <ul data-role="listview" data-filter="true" data-inset="true" class="ui-listview" >              
+                    <li><a href="#ca-sd" data-icon="arrow-r" data-iconpos="right">CA: CA/SD</a></li>
+                    <li><a href="#hub-srvrs" data-icon="arrow-r" data-iconpos="right">HUB: HUB SRVRS</a></li>
+                    <li><a href="#video-codec" data-icon="arrow-r" data-iconpos="right">TES: Video CODEC</a></li>
+                    <li><a href="#mobile-node" data-icon="arrow-r" data-iconpos="right">TES: Mobile Node 4</a></li>
+                </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Raw Materials page-->
+
+    <div data-role="page" id="rawmaterials" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Raw Materials</h1>
+        </div> 
+        <div data-role="content">
+                <ul data-role="listview" data-filter="true" data-inset="true" class="ui-listview" >              
+                    <li><a href="#bld-na1" data-icon="arrow-r" data-iconpos="right">BLD: N/A</a></li>
+                    <li><a href="#bld-na2" data-icon="arrow-r" data-iconpos="right">BLD: N/A</a></li>
+                    <li><a href="#bld-na3" data-icon="arrow-r" data-iconpos="right">BLD: N/A</a></li>
+                    <li><a href="#bld-na4" data-icon="arrow-r" data-iconpos="right">BLD: N/A</a></li>
+                </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Upgrade page-->
+
+    <div data-role="page" id="upgrade" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Upgrade</h1>
+        </div> 
+        <div data-role="content">
+                <ul data-role="listview" data-filter="true" data-inset="true" class="ui-listview" >              
+                    <li><a href="#rts-pro" data-icon="arrow-r" data-iconpos="right">RTS: Projector Upgrade</a></li>
+                    <li><a href="#hub-fw" data-icon="arrow-r" data-iconpos="right">HUB: Firewall</a></li>
+                    <li><a href="#hub-rack" data-icon="arrow-r" data-iconpos="right">HUB: Rack/UPG</a></li>
+                    <li><a href="#tes-kvm" data-icon="arrow-r" data-iconpos="right">TES: KVMoIP Upgrade</a></li>
+                </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <!--Indirect Page-->
+
+    <div data-role="page" id="indirect" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Indirect</h1>
+        </div> 
+        <div data-role="content">
+                <ul data-role="listview" data-filter="true" data-inset="true" class="ui-listview" >              
+                    <li><a href="#hq-ih1" data-icon="arrow-r" data-iconpos="right">HQ: In House</a></li>
+                    <li><a href="#hq-ih2" data-icon="arrow-r" data-iconpos="right">HQ: In House</a></li>
+                    <li><a href="#hq-ih3" data-icon="arrow-r" data-iconpos="right">HQ: In House</a></li>
+                    <li><a href="#hq-ih4" data-icon="arrow-r" data-iconpos="right">HQ: In House</a></li>
+                </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Maintenance Task test page-->
+    <div data-role="page" id="tes-sm1" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>TES/SM</h1>
         </div>
 
-        
+        <div data-role="content">
+            <p>Task Details</p>
+        </div>
 
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar" data-position="fixed">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="additem.html" data-icon="plus">New Task</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
                 </ul>
             </div>
         </div>
     </div>
+
+     <!--Product Task test page-->
+    <div data-role="page" id="ca-sd" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>CA/SD</h1>
+        </div>
+
+        <div data-role="content">
+            <p>Task Details</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+     <!--Raw Materials Task test page-->
+    <div data-role="page" id="bld-na1" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>BLD/NA</h1>
+        </div>
+
+        <div data-role="content">
+            <p>Task Details</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+     <!--Upgrade Task test page-->
+    <div data-role="page" id="rts-pro" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>RTS: Projector Upgrade</h1>
+        </div>
+
+        <div data-role="content">
+            <p>Task Details</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+     <!--Indirect Task test page-->
+    <div data-role="page" id="hq-ih1" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>HQ: In House</h1>
+        </div>
+
+        <div data-role="content">
+            <p>Task Details</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
 
 
 
