@@ -1,0 +1,33 @@
+/* 
+Angela Koepplinger
+MIU: Term 1210;
+Project 2: Gold App
+Date: 10/04/12
+*/
+
+img.ui-li-thumb{
+	height: 40px;
+	width: 40px; 
+	margin: 0;
+	padding: 0;
+}
+.ui-li .ui-btn-text a.ui-link-inherit, .ui-li-static.ui-li{
+	min-height: 40px;
+	padding: 0;
+	margin-left: 50px
+}
+#cta {
+	margin: 0px;
+	margin-bottom: -3px;
+	padding: 0px;
+}
+
+.ui-listview-filter.ui-bar-c{
+	height:80%;
+}
+
+input.ui-input-text, textarea.ui-input-text{
+	font-size: 14px;
+	line-height: 1.2;
+	color: FFF000;
+}
