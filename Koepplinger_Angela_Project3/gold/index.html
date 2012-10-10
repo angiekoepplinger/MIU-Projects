@@ -37,7 +37,7 @@
         </div>
 
         <div data-role="content" id="cta" >
-            <a href="additem.html" data-ajax="false"<a href="#"><img src="images/cta.png"></a>
+            <a href="#addtask" data-ajax="false"<a href="#"><img src="images/cta.png"></a>
         </div>
 
         <div data-role="content" >
@@ -64,7 +64,7 @@
                 <ul>
                     <li><a href="#about" data-icon="info">About</a></li>
                     <li><a href="#news"  data-icon="grid">Newsfeed</a></li>
-                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                    <li><a href="#addtask" data-ajax="false" data-icon="plus">New Task</a></li>
                     
                 </ul>
             </div>
@@ -107,7 +107,7 @@
             <div data-role="navbar" data-position="fixed">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                    <li><a href="#addtask" data-ajax="false" data-icon="plus">New Task</a></li>
                 </ul>
             </div>
         </div>
@@ -150,7 +150,7 @@
             <div data-role="navbar" data-position="fixed">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                    <li><a href="#addtask" data-ajax="false" data-icon="plus">New Task</a></li>
                 </ul>
             </div>
         </div>
@@ -191,7 +191,7 @@
             <div data-role="navbar" data-position="fixed">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                    <li><a href="#addtask" data-ajax="false" data-icon="plus">New Task</a></li>
                 </ul>
             </div>
         </div>
@@ -234,7 +234,7 @@
             <div data-role="navbar" data-position="fixed">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                    <li><a href="#addtask" data-ajax="false" data-icon="plus">New Task</a></li>
                 </ul>
             </div>
         </div>
@@ -277,7 +277,7 @@
             <div data-role="navbar" data-position="fixed">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                    <li><a href="#addtask" data-ajax="false" data-icon="plus">New Task</a></li>
                 </ul>
             </div>
         </div>
@@ -300,7 +300,7 @@
             <div data-role="navbar" data-position="fixed">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                    <li><a href="#addtask" data-ajax="false" data-icon="plus">New Task</a></li>
                 </ul>
             </div>
         </div>
@@ -318,30 +318,148 @@
             <p><a href="http://www.procurementleaders.com/magazine-library">Procurement Leaders: Forum 2012</a></p>
             <p><a href="http://procurement-resources.com">Procurement Resources: Excellence in Public Sector Procurement & Training </a></p>
             <p><a href="http://www.sdcexec.com/topics/sourcing-procurement"> Supply & Demand Chain Executive</a></p>
-            
-            
         </div>
+    </div>      
+            
+        
 
-        <div data-role="footer" data-position="fixed">
-            <div data-role="navbar" data-position="fixed">
-                <ul>
-                    <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
-                </ul>
-            </div>
+    <div data-role="page" id="addtask" data-add-back-btn="true">
+
+        <div data-role="content" >
+            <form action="#" method="post" id="procurementTask">
+            <ul data-role="listview" data-inset="true">
+                <li data-role="list-divider">Purchase Requirement</li>
+                <fieldset>
+                    <div data-role="fieldcontain">
+                        <label for="purchase-type">Purchase Type:</label>
+                        <select name="purchase-type" id="purchase-type">
+                            <option value="select-a-type">--Select A Type--</option>
+                            <option value="maintenance">Maintenance</option>
+                            <option value="product">Product</option>
+                            <option value="raw-materials">Raw Materials</option>
+                            <option value="Upgrade">Upgrade</option>
+                            <option value="indirect">Indirect</option>
+                        </select>
+                    </div>
+                    
+                    <div data-role="fieldcontain">
+                        <label for="workorder">Work Order:</label>
+                        <input type="text" name="workorder" id="workorder" />
+                    </div>
+
+                    <div data-role="fieldcontain">
+                        <label for="supportsite">Support Site:</label>
+                        <input type="text" name="supportsite" id="supportsite" />
+                    </div>
+                </fieldset>
+            </ul>
+
+
+                
+            <ul data-role="listview" data-inset="true">
+                <li data-role="list-divider">Purchase Requirement</li>
+                <fieldset>
+                    <div data-role="fieldcontain">
+                        <label for="item-type">Item Type:</label>
+                        <select name="item-type" id="item-type">
+                            <option value="select-a-type">--Select A Type--</option>
+                            <option value="hardware">Hardware</option>
+                            <option value="software">Software</option>
+                            <option value="support-contract">Support Contract</option>
+                        </select>
+                    </div>
+
+                    <div data-role="fieldcontain">
+                       <fieldset data-role="controlgroup" data-type="horizontal">
+                            <legend>Asset?:</legend>
+                            <input type="radio" value="yes" name="asset-role" id="asset-role-yes" />
+                            <label for="asset-role-yes">Yes</label>
+                            <input type="radio" value="yes" name="asset-role" id="asset-role-no" />
+                            <label for="asset-role-no">No</label>
+                       </fieldset>
+                    </div>
+
+                    <div data-role="fieldcontain">
+                        <label for="manufacturer">Manufacturer:</label>
+                        <input type="text" name="manufacturer" id="manufacturer" />
+                    </div>
+
+                    <div data-role="fieldcontain">
+                        <label for="partnumber">Part Number:</label>
+                        <input type="text" name="partnumber" id="partnumber" />
+                    </div>
+
+                    <div data-role="fieldcontain">
+                        <label for="qty">Qty:</label>
+                        <input type="text" name="qty" id="qty" />
+                    </div>
+                </fieldset>
+            </ul>
+            <ul data-role="listview" data-inset="true">
+                <li data-role="list-divider">Purchase Requirement</li>
+                <fieldset>
+                    <div data-role="fieldcontain">
+                        <label for="urgency">Urgency:</label>
+                        <input type="range" name="urgency" id="urgency" value="0" min="0" max="10"/>
+                    </div>
+
+                    <div data-role="fieldcontain">
+                       <fieldset data-role="controlgroup">
+                            <legend>Mgmt Approval:</legend>
+                            <input type="radio" value="requested" name="mgmt-approval" id="mgmt-approval-1" />
+                            <label for="mgmt-approval-1">Requested</label>
+                            <input type="radio" value="received" name="mgmt-approval" id="mgmt-approval-2" />
+                            <label for="mgmt-approval-2">Received</label>
+                            <input type="radio" value="notrequired" name="mgmt-approval" id="mgmt-approval-3" />
+                            <label for="mgmt-approval-3">Not Required</label>
+                       </fieldset>
+                    </div>
+
+                    <div data-role="fieldcontain">
+                       <fieldset data-role="controlgroup">
+                            <legend>R&R Request:</legend>
+                            <input type="radio" value="requested" name="rr-request" id="rr-request-1" />
+                            <label for="rr-request-1">Required</label>
+                            <input type="radio" value="notrequired" name="rr-request" id="rr-request-2" />
+                            <label for="rr-request-2">Not Required</label>
+                       </fieldset>
+                    </div>
+
+
+                    <div data-role="fieldcontain">
+                        <label for="daterequired">Date Required:</label>
+                        <input type="text" name="daterequired" id="daterequired" />
+                    </div>
+
+                    <div data-role="fieldcontain">
+                        <label for="datecompleted">Date Completed:</label>
+                        <input type="text" name="datecompleted" id="datecompleted" />
+                    </div>
+
+                   <div data-role="fieldcontain">
+                        <label for="notes">Notes:</label>
+                        <textarea></textarea>
+                    </div>
+                </fieldset>
+            </ul>
+
+            <input type="submit" value="Add Purchase Task" data-theme="b"/>
+            <input type="reset" value="Reset" data-theme="a"/>
+                    
+
+            </form>
         </div>
     </div>
-
-
+ 
 
 
     
 
     <!-- JavaScript under here -->
     
-    <script src="js/json.js" type="text/javascript"></script>
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+    <script src="js/json.js" type="text/javascript"></script>
 
 </body>
 </html>
