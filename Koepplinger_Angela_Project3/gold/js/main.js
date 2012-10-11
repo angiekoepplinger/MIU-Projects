@@ -16,12 +16,13 @@ console.log(data);
 
 $(document).on('pageinit', function(){
 
-	var myform = $("#procurementTask");
-	myform.validate({
-		invalidHandler: function(form, validator){},
-		submitHandler: function(){}
-			var data = myform.serializeArray();
-			storeData();
+	var myForm = $('#procurementTask');
+	myForm.validate({
+		invalidHandler: function(form, validator) {},
+		submitHandler: function() {
+			var data = myForm.serializeArray();
+			storeData(data);
+		}
 	});
 });
 
@@ -40,22 +41,23 @@ function storeData(key){
 		getSelectedRadio();
 
 		var item           			= {};
-			item.purchaseType      	= ["Purchase Type:", $("#purchaseList").value];
-			item.workOrder 			= ["Work Order:", $("#workOrder").value];
-			item.supportSite 		= ["Support Site:", $("#supportSite").value];
-			item.itemType 			= ["Item Type:", $("#itemList").value];
+			item.purchaseType      	= ["Purchase Type:", $("#purchaseList").val()];
+			item.workOrder 			= ["Work Order:", $("#workOrder").val()];
+			item.supportSite 		= ["Support Site:", $("#supportSite").val()];
+			item.itemType 			= ["Item Type:", $("#itemList").val()];
 			item.asset 				= ["Asset:", assetValue];
-			item.manufacturer 		= ["Manufacturer:", $("#manufacturer").value];
-			item.partNumber 		= ["Part Number:", $("#partNumber").value];
-			item.qty 				= ["Qty:", $("#qty").value];
-			item.urgency 			= ["Urgency:", $("#urgency").value];
+			item.manufacturer 		= ["Manufacturer:", $("#manufacturer").val()];
+			item.partNumber 		= ["Part Number:", $("#partNumber").val()];
+			item.qty 				= ["Qty:", $("#qty").val()];
+			item.urgency 			= ["Urgency:", $("#urgency").val()];
 			item.mgmtApproval 		= ["Management Approval:", getCheckboxValue("mgmtApproval")];
 			item.rrRequest 			= ["R&R Request:", getCheckboxValue("rrRequest")];
-			item.dateRequired 		= ["Date Required:", $("#dateRequired").value];
-			item.completionDate		= ["Completion Date:", $("#completionDate").value];
-			item.notes			 	= ["Notes:", $("#notes").value];
+			item.dateRequired 		= ["Date Required:", $("#dateRequired").val()];
+			item.completionDate		= ["Completion Date:", $("#completionDate").val()];
+			item.notes			 	= ["Notes:", $("#notes").val()];
 
 			//Save data into Local Storage: Use Stringify to convert our object to a string.
 			localStorage.setItem(id, JSON.stringify(item));
 			alert("Purchase Task Saved!");
 	};
+	
