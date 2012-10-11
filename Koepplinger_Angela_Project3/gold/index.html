@@ -332,8 +332,8 @@
                 <fieldset>
                     <div data-role="fieldcontain">
                         <label for="purchase-type">Purchase Type:</label>
-                        <select name="purchase-type" id="purchase-type" data-native-menu="false">
-                            <option value="select-a-type">-- Select A Type --</option>
+                        <select name="purchase-type" id="purchase-type" data-native-menu="false" class="required">
+                            <option value="">-- Select A Type --</option>
                             <option value="maintenance">Maintenance</option>
                             <option value="product">Product</option>
                             <option value="raw-materials">Raw Materials</option>
@@ -361,12 +361,11 @@
                 <fieldset>
                     <div data-role="fieldcontain">
                         <label for="item-type">Item Type:</label>
-                        <select name="item-type" id="item-type" data-native-menu="false">
-                            <option data-placeholder="true">Select A Type</option>
-                            <optgroup label="ItemType">
-                                <option value="hardware">Hardware</option>
-                                <option value="software">Software</option>
-                                <option value="support-contract">Support Contract</option>
+                        <select name="item-type" id="item-type" data-native-menu="false" class="required">
+                            <option value="">Select A Type</option>
+                            <option value="hardware">Hardware</option>
+                            <option value="software">Software</option>
+                            <option value="support-contract">Support Contract</option>
                             </optgroup>
                         </select>
                     </div>
@@ -376,7 +375,7 @@
                             <legend>Asset?:</legend>
                             <input type="radio" value="yes" name="asset-role" id="asset-role-yes" />
                             <label for="asset-role-yes">Yes</label>
-                            <input type="radio" value="yes" name="asset-role" id="asset-role-no" />
+                            <input type="radio" value="yes" name="asset-role" id="asset-role-no"/>
                             <label for="asset-role-no">No</label>
                        </fieldset>
                     </div>
@@ -408,7 +407,7 @@
                     <div data-role="fieldcontain">
                        <fieldset data-role="controlgroup">
                             <legend>Mgmt Approval:</legend>
-                            <input type="radio" value="requested" name="mgmt-approval" id="mgmt-approval-1" />
+                            <input type="radio" value="requested" name="mgmt-approval" id="mgmt-approval-1"/>
                             <label for="mgmt-approval-1">Requested</label>
                             <input type="radio" value="received" name="mgmt-approval" id="mgmt-approval-2" />
                             <label for="mgmt-approval-2">Received</label>
@@ -420,7 +419,7 @@
                     <div data-role="fieldcontain">
                        <fieldset data-role="controlgroup">
                             <legend>R&R Request:</legend>
-                            <input type="radio" value="requested" name="rr-request" id="rr-request-1" />
+                            <input type="radio" value="requested" name="rr-request" id="rr-request-1" class="required"/>
                             <label for="rr-request-1">Required</label>
                             <input type="radio" value="notrequired" name="rr-request" id="rr-request-2" />
                             <label for="rr-request-2">Not Required</label>
@@ -430,7 +429,7 @@
 
                     <div data-role="fieldcontain">
                         <label for="daterequired">Date Required:</label>
-                        <input type="text" name="daterequired" id="daterequired" class="required"/>
+                        <input type="text" name="daterequired" id="daterequired" class="required date"/>
                     </div>
 
                     <div data-role="fieldcontain">
@@ -445,7 +444,7 @@
                 </fieldset>
             </ul>
 
-            <input type="submit" value="Add Purchase Task" data-theme="b"/>
+            <input type="submit" value="Add Purchase Task" data-theme="b"/ data-ajax="false">
             <input type="reset" value="Reset" data-theme="a"/>
                     
 

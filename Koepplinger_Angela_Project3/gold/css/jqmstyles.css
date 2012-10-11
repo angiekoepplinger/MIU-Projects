@@ -31,3 +31,9 @@ input.ui-input-text, textarea.ui-input-text{
 	line-height: 1.2;
 	color: FFF000;
 }
+
+label.error{
+	display:block; 
+	margin:10px 0;
+	color:#cc0000;
+}
