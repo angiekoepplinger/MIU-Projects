@@ -332,8 +332,8 @@
                 <fieldset>
                     <div data-role="fieldcontain">
                         <label for="purchase-type">Purchase Type:</label>
-                        <select name="purchase-type" id="purchase-type">
-                            <option value="select-a-type">--Select A Type--</option>
+                        <select name="purchase-type" id="purchase-type" data-native-menu="false">
+                            <option value="select-a-type">-- Select A Type --</option>
                             <option value="maintenance">Maintenance</option>
                             <option value="product">Product</option>
                             <option value="raw-materials">Raw Materials</option>
@@ -344,12 +344,12 @@
                     
                     <div data-role="fieldcontain">
                         <label for="workorder">Work Order:</label>
-                        <input type="text" name="workorder" id="workorder" />
+                        <input type="text" name="workorder" id="workorder" class="required"/>
                     </div>
 
                     <div data-role="fieldcontain">
                         <label for="supportsite">Support Site:</label>
-                        <input type="text" name="supportsite" id="supportsite" />
+                        <input type="text" name="supportsite" id="supportsite" class="required"/>
                     </div>
                 </fieldset>
             </ul>
@@ -357,15 +357,17 @@
 
                 
             <ul data-role="listview" data-inset="true">
-                <li data-role="list-divider">Purchase Requirement</li>
+                <li data-role="list-divider">Item information</li>
                 <fieldset>
                     <div data-role="fieldcontain">
                         <label for="item-type">Item Type:</label>
-                        <select name="item-type" id="item-type">
-                            <option value="select-a-type">--Select A Type--</option>
-                            <option value="hardware">Hardware</option>
-                            <option value="software">Software</option>
-                            <option value="support-contract">Support Contract</option>
+                        <select name="item-type" id="item-type" data-native-menu="false">
+                            <option data-placeholder="true">Select A Type</option>
+                            <optgroup label="ItemType">
+                                <option value="hardware">Hardware</option>
+                                <option value="software">Software</option>
+                                <option value="support-contract">Support Contract</option>
+                            </optgroup>
                         </select>
                     </div>
 
@@ -396,7 +398,7 @@
                 </fieldset>
             </ul>
             <ul data-role="listview" data-inset="true">
-                <li data-role="list-divider">Purchase Requirement</li>
+                <li data-role="list-divider">Additional Information</li>
                 <fieldset>
                     <div data-role="fieldcontain">
                         <label for="urgency">Urgency:</label>
@@ -428,7 +430,7 @@
 
                     <div data-role="fieldcontain">
                         <label for="daterequired">Date Required:</label>
-                        <input type="text" name="daterequired" id="daterequired" />
+                        <input type="text" name="daterequired" id="daterequired" class="required"/>
                     </div>
 
                     <div data-role="fieldcontain">
@@ -459,6 +461,8 @@
     
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
     <script src="js/json.js" type="text/javascript"></script>
 
 </body>
