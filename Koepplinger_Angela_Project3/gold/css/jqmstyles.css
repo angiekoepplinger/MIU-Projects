@@ -38,6 +38,7 @@ label.error{
 	color:#cc0000;
 }
 
-#purchasetaskerrors{
-	dispay: none;
+input#addptaskbutton.ui-btn-hidden{
+	margin-bottom: 10px;
 }
+
