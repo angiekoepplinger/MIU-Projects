@@ -1,7 +1,12 @@
 //Angela Koepplinger
 //MIU: Term 1210
+<<<<<<< HEAD
 // Project 2: Gold App
 //Date: 10/04/12
+=======
+// Project 3: Gold App
+//Date: 10/08/12
+>>>>>>> gh-pages
 
 
 var json = {
