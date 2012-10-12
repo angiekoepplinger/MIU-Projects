@@ -335,8 +335,8 @@
                 <fieldset>
                     <div data-role="fieldcontain">
                         <label for="purchase-type">*Purchase Type:</label>
-                        <select name="purchase-type" id="purchase-type" data-native-menu="false" class="required">
-                            <option value="">-- Select A Type --</option>
+                        <select name="purchase-type" id="purchase-type" data-native-menu="false" class="required" data-mini="true">
+                            <option value="selectatype" >-- Select A Type --</option>
                             <option value="maintenance">Maintenance</option>
                             <option value="product">Product</option>
                             <option value="raw-materials">Raw Materials</option>
@@ -364,8 +364,8 @@
                 <fieldset>
                     <div data-role="fieldcontain">
                         <label for="item-type">*Item Type:</label>
-                        <select name="item-type" id="item-type" data-native-menu="false" class="required">
-                            <option value="">Select A Type</option>
+                        <select name="item-type" id="item-type" data-native-menu="false" class="required" data-mini="true">
+                            <option value="selectatype">-- Select A Type --</option>
                             <option value="hardware">Hardware</option>
                             <option value="software">Software</option>
                             <option value="support-contract">Support Contract</option>
@@ -374,7 +374,7 @@
                     </div>
 
                     <div data-role="fieldcontain">
-                       <fieldset data-role="controlgroup" data-type="horizontal">
+                       <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
                             <legend>Asset?:</legend>
                             <input type="radio" value="yes" name="asset-role-yes" id="asset-role-yes" />
                             <label for="asset-role-yes">Yes</label>
@@ -404,11 +404,11 @@
                 <fieldset>
                     <div data-role="fieldcontain">
                         <label for="urgency">Urgency:</label>
-                        <input type="range" name="urgency" id="urgency" value="5" min="0" max="10" />
+                        <input type="range" name="urgency" id="urgency" value="5" min="0" max="10" data-mini="true"/>
                     </div>
 
                     <div data-role="fieldcontain">
-                       <fieldset data-role="controlgroup">
+                       <fieldset data-role="controlgroup" >
                             <legend>Mgmt Approval:</legend>
                             <input type="checkbox" checked="checked" value="required" name="mgmt-approval" id="mgmt-approval-1"/>
                             <label for="mgmt-approval-1">Required</label>
@@ -420,7 +420,7 @@
                     </div>
 
                     <div data-role="fieldcontain">
-                       <fieldset data-role="controlgroup">
+                       <fieldset data-role="controlgroup" >
                             <legend>*R&R Request:</legend>
                             <input type="radio" value="requested" name="rr-request" id="rr-request-1" class="required"/>
                             <label for="rr-request-1">Required</label>
@@ -431,7 +431,7 @@
 
 
                     <div data-role="fieldcontain">
-                        <label for="daterequired">*Date Required:</label>
+                        <label for="daterequired">Date Required:</label>
                         <input type="date" name="daterequired" id="daterequired" class="required date" value="2013-01-01"/>
                     </div>
 
