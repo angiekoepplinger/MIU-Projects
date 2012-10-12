@@ -324,6 +324,9 @@
         
 
     <div data-role="page" id="addtask" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Add Task</h1>
+        </div>
 
         <div data-role="content" >
             <form action="#" method="post" id="procurementTask">
@@ -331,7 +334,7 @@
                 <li data-role="list-divider">Purchase Requirement</li>
                 <fieldset>
                     <div data-role="fieldcontain">
-                        <label for="purchase-type">Purchase Type:</label>
+                        <label for="purchase-type">*Purchase Type:</label>
                         <select name="purchase-type" id="purchase-type" data-native-menu="false" class="required">
                             <option value="">-- Select A Type --</option>
                             <option value="maintenance">Maintenance</option>
@@ -343,13 +346,13 @@
                     </div>
                     
                     <div data-role="fieldcontain">
-                        <label for="workorder">Work Order:</label>
-                        <input type="text" name="workorder" id="workorder" class="required"/>
+                        <label for="workorder">*Work Order:</label>
+                        <input type="text" name="workorder" id="workorder" class="required" placeholder="SRVRS UPG"/>
                     </div>
 
                     <div data-role="fieldcontain">
-                        <label for="supportsite">Support Site:</label>
-                        <input type="text" name="supportsite" id="supportsite" class="required"/>
+                        <label for="supportsite">*Support Site:</label>
+                        <input type="text" name="supportsite" id="supportsite" class="required" placeholder="TES"/>
                     </div>
                 </fieldset>
             </ul>
@@ -360,7 +363,7 @@
                 <li data-role="list-divider">Item information</li>
                 <fieldset>
                     <div data-role="fieldcontain">
-                        <label for="item-type">Item Type:</label>
+                        <label for="item-type">*Item Type:</label>
                         <select name="item-type" id="item-type" data-native-menu="false" class="required">
                             <option value="">Select A Type</option>
                             <option value="hardware">Hardware</option>
@@ -373,26 +376,26 @@
                     <div data-role="fieldcontain">
                        <fieldset data-role="controlgroup" data-type="horizontal">
                             <legend>Asset?:</legend>
-                            <input type="radio" value="yes" name="asset-role" id="asset-role-yes" />
+                            <input type="radio" value="yes" name="asset-role-yes" id="asset-role-yes" />
                             <label for="asset-role-yes">Yes</label>
-                            <input type="radio" value="yes" name="asset-role" id="asset-role-no"/>
+                            <input type="radio" value="yes" name="asset-role-no" id="asset-role-no"/>
                             <label for="asset-role-no">No</label>
                        </fieldset>
                     </div>
 
                     <div data-role="fieldcontain">
                         <label for="manufacturer">Manufacturer:</label>
-                        <input type="text" name="manufacturer" id="manufacturer" />
+                        <input type="text" name="manufacturer" id="manufacturer" placeholder="Cisco Systems"/>
                     </div>
 
                     <div data-role="fieldcontain">
                         <label for="partnumber">Part Number:</label>
-                        <input type="text" name="partnumber" id="partnumber" />
+                        <input type="text" name="partnumber" id="partnumber" placeholder="WS-C2960"/>
                     </div>
 
                     <div data-role="fieldcontain">
-                        <label for="qty">Qty:</label>
-                        <input type="text" name="qty" id="qty" class="required number"/>
+                        <label for="qty">*Qty:</label>
+                        <input type="text" name="qty" id="qty" class="required number" placeholder="5"/>
                     </div>
                 </fieldset>
             </ul>
@@ -401,24 +404,24 @@
                 <fieldset>
                     <div data-role="fieldcontain">
                         <label for="urgency">Urgency:</label>
-                        <input type="range" name="urgency" id="urgency" value="0" min="0" max="10"/>
+                        <input type="range" name="urgency" id="urgency" value="5" min="0" max="10" />
                     </div>
 
                     <div data-role="fieldcontain">
                        <fieldset data-role="controlgroup">
                             <legend>Mgmt Approval:</legend>
-                            <input type="radio" value="requested" name="mgmt-approval" id="mgmt-approval-1"/>
-                            <label for="mgmt-approval-1">Requested</label>
-                            <input type="radio" value="received" name="mgmt-approval" id="mgmt-approval-2" />
-                            <label for="mgmt-approval-2">Received</label>
-                            <input type="radio" value="notrequired" name="mgmt-approval" id="mgmt-approval-3" />
-                            <label for="mgmt-approval-3">Not Required</label>
+                            <input type="checkbox" checked="checked" value="required" name="mgmt-approval" id="mgmt-approval-1"/>
+                            <label for="mgmt-approval-1">Required</label>
+                            <input type="checkbox" value="requested" name="mgmt-approval" id="mgmt-approval-2" />
+                            <label for="mgmt-approval-2">Requested</label>
+                            <input type="checkbox" value="approved" name="mgmt-approval" id="mgmt-approval-3" />
+                            <label for="mgmt-approval-3">Approved</label>
                        </fieldset>
                     </div>
 
                     <div data-role="fieldcontain">
                        <fieldset data-role="controlgroup">
-                            <legend>R&R Request:</legend>
+                            <legend>*R&R Request:</legend>
                             <input type="radio" value="requested" name="rr-request" id="rr-request-1" class="required"/>
                             <label for="rr-request-1">Required</label>
                             <input type="radio" value="notrequired" name="rr-request" id="rr-request-2" />
@@ -428,29 +431,45 @@
 
 
                     <div data-role="fieldcontain">
-                        <label for="daterequired">Date Required:</label>
-                        <input type="text" name="daterequired" id="daterequired" class="required date"/>
+                        <label for="daterequired">*Date Required:</label>
+                        <input type="date" name="daterequired" id="daterequired" class="required date" value="2013-01-01"/>
                     </div>
 
                     <div data-role="fieldcontain">
                         <label for="datecompleted">Date Completed:</label>
-                        <input type="text" name="datecompleted" id="datecompleted" />
+                        <input type="date" name="datecompleted" id="datecompleted" placeholder="YYYY-MM-DD"/>
                     </div>
 
                    <div data-role="fieldcontain">
                         <label for="notes">Notes:</label>
-                        <textarea></textarea>
+                        <textarea id="notes" name="notes"></textarea>
                     </div>
                 </fieldset>
             </ul>
 
-            <input type="submit" value="Add Purchase Task" data-theme="b"/ data-ajax="false">
-            <input type="reset" value="Reset" data-theme="a"/>
-                    
+                    <div data-role="fieldcontain">   
+                        <input type="submit" value="Add Purchase Task" id="addptaskbutton" data-theme="b"/ data-ajax="false">
+                        <input type="reset" value="Reset" data-theme="c"/>
+                    </div>
+                  
+                <!--<a href="#purchasetaskerrors" id="pterrorslink" data-rel="dialog" data-transition="pop">Open Errors</a> -->
 
             </form>
         </div>
     </div>
+
+    <!--<div data-role="dialog" id="purchasetaskerrors">
+
+        <div data-role="header" data-position="fixed" >
+            <h1>Missing Fields</h1>
+        </div>
+
+        <div data-role="content">
+            <ul>
+                <li>Test.</li>
+            </ul>
+        </div>
+    </div> -->
  
 
 
@@ -466,4 +485,3 @@
 
 </body>
 </html>
- 

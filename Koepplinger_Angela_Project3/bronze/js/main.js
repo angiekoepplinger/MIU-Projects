@@ -271,7 +271,6 @@ window.addEventListener("DOMContentLoaded", function(){
 		var getItemList = ge("itemList");
 		var getWorkOrder = ge("workOrder");
 		var getSupportSite = ge("supportSite");
-		var getDateRequired =  ge("dateRequired");
 
 		//Reset Error Messages
 		errorMsg.innerHTML = "";
@@ -279,7 +278,6 @@ window.addEventListener("DOMContentLoaded", function(){
 		getItemList.style.border = "1px solid black";
 		getWorkOrder.style.border = "1px solid black";
 		getSupportSite.style.border = "1px solid black";
-		getDateRequired.style.border = "1px solid black";
 
 		//Get Error Messages
 		var messageArray = [];
@@ -307,13 +305,6 @@ window.addEventListener("DOMContentLoaded", function(){
 			var supportSiteError = "Please enter Support Site!";
 			getSupportSite.style.border = "1px solid red";
 			messageArray.push(supportSiteError);
-		};
-
-		//Date Required Validation
-		if(getDateRequired.value ==="") {
-			var dateRequiredError = "Please enter Date Required!";
-			getDateRequired.style.border = "1px solid red";
-			messageArray.push(dateRequiredError);
 		};
 
 		// email Validation
