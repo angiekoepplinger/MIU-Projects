@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!--Angela Koepplinger-->
+<!--MIU: Term 1210-->
+<!--Project 3: Bronze App-->
+<!--Date: 10/08/12-->
+
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    
+    <title>Procurement Task Manager</title>
+    
+    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Mobile IE needs ClearType for smoothing fonts -->
+    <meta http-equiv="cleartype" content="on">
+    
+    <!-- StyleSheets under here -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jqmstyles.css" />
+
+
+    
+    
+    <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+    <script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+    <!--Home Page-->
+    <div data-role="page" id="home">
+
+        <div data-role="header" data-position="fixed">
+            <h1>Task Manager</h1>
+        </div>
+        <div data-role="content" id="cta" >
+            <a href="additem.html" data-ajax="false"<a href="#"><img src="images/cta.png"></a>
+        </div>
+        <div data-role="content" data-theme="a">
+            <div class="ui-grid-b">
+                <div class="ui-block-a"><a href= "#maintenance">
+                    <img src="imageslg/Maintenance.png" class="icon"></a>
+                </div>
+                <div class="ui-block-b"><a href= "#product">
+                    <img src="imageslg/Product.png" class="icon"/></a>
+                </div>
+                <div class="ui-block-c"><a href= "#rawmaterials">
+                    <img src="imageslg/Raw Materials.png" class="icon"/></a>
+                </div>
+                <div class="ui-block-a"><a href= "#upgrade">
+                    <img src="imageslg/Upgrade.png" class="icon"/></a>
+                </div>
+                <div class="ui-block-b"><a href= "#indirect">
+                    <img src="imageslg/Indirect.png" class="icon"/></a>
+                </div>
+                <div class="ui-block-c">
+                </div>
+            </div> 
+        </div> 
+        <div data-role="footer" data-position="fixed">       
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#about" data-icon="info">About</a></li>
+                    <li><a href="#news" data-icon="grid">Newsfeed</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+     <!--Maintenance page-->
+
+    <div data-role="page" id="maintenance" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Maintenance</h1>
+        </div> 
+        <div data-role="content">
+            <ul data-role="listview" data-filter="true" data-inset="true" class="ui-listview" >              
+                <li><a href="#tes-sm1" data-icon="arrow-r" data-iconpos="right">TES: TES/SM</a></li>
+                <li><a href="#rmm-sm" data-icon="arrow-r" data-iconpos="right">RMM: RMM/SM</a></li>
+                <li><a href="#tes-sm2" data-icon="arrow-r" data-iconpos="right">TES: TES/SM</a></li>
+                <li><a href="#mit-sm" data-icon="arrow-r" data-iconpos="right">MIT: MIT/SM</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Product page-->
+
+    <div data-role="page" id="product" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Product</h1>
+        </div> 
+        <div data-role="content">
+                <ul data-role="listview" data-filter="true" data-inset="true" class="ui-listview" >              
+                    <li><a href="#ca-sd" data-icon="arrow-r" data-iconpos="right">CA: CA/SD</a></li>
+                    <li><a href="#hub-srvrs" data-icon="arrow-r" data-iconpos="right">HUB: HUB SRVRS</a></li>
+                    <li><a href="#video-codec" data-icon="arrow-r" data-iconpos="right">TES: Video CODEC</a></li>
+                    <li><a href="#mobile-node" data-icon="arrow-r" data-iconpos="right">TES: Mobile Node 4</a></li>
+                </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Raw Materials page-->
+
+    <div data-role="page" id="rawmaterials" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Raw Materials</h1>
+        </div> 
+        <div data-role="content">
+                <ul data-role="listview" data-filter="true" data-inset="true" class="ui-listview" >              
+                    <li><a href="#bld-na1" data-icon="arrow-r" data-iconpos="right">BLD: N/A</a></li>
+                    <li><a href="#bld-na2" data-icon="arrow-r" data-iconpos="right">BLD: N/A</a></li>
+                    <li><a href="#bld-na3" data-icon="arrow-r" data-iconpos="right">BLD: N/A</a></li>
+                    <li><a href="#bld-na4" data-icon="arrow-r" data-iconpos="right">BLD: N/A</a></li>
+                </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Upgrade page-->
+
+    <div data-role="page" id="upgrade" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Upgrade</h1>
+        </div> 
+        <div data-role="content">
+                <ul data-role="listview" data-filter="true" data-inset="true" class="ui-listview" >              
+                    <li><a href="#rts-pro" data-icon="arrow-r" data-iconpos="right">RTS: Projector Upgrade</a></li>
+                    <li><a href="#hub-fw" data-icon="arrow-r" data-iconpos="right">HUB: Firewall</a></li>
+                    <li><a href="#hub-rack" data-icon="arrow-r" data-iconpos="right">HUB: Rack/UPG</a></li>
+                    <li><a href="#tes-kvm" data-icon="arrow-r" data-iconpos="right">TES: KVMoIP Upgrade</a></li>
+                </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <!--Indirect Page-->
+
+    <div data-role="page" id="indirect" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Indirect</h1>
+        </div> 
+        <div data-role="content">
+                <ul data-role="listview" data-filter="true" data-inset="true" class="ui-listview" >              
+                    <li><a href="#hq-ih1" data-icon="arrow-r" data-iconpos="right">HQ: In House</a></li>
+                    <li><a href="#hq-ih2" data-icon="arrow-r" data-iconpos="right">HQ: In House</a></li>
+                    <li><a href="#hq-ih3" data-icon="arrow-r" data-iconpos="right">HQ: In House</a></li>
+                    <li><a href="#hq-ih4" data-icon="arrow-r" data-iconpos="right">HQ: In House</a></li>
+                </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Maintenance Task test page-->
+    <div data-role="page" id="tes-sm1" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>TES/SM</h1>
+        </div>
+
+        <div data-role="content">
+            <p>Task Details</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+     <!--Product Task test page-->
+    <div data-role="page" id="ca-sd" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>CA/SD</h1>
+        </div>
+
+        <div data-role="content">
+            <p>Task Details</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+     <!--Raw Materials Task test page-->
+    <div data-role="page" id="bld-na1" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>BLD/NA</h1>
+        </div>
+
+        <div data-role="content">
+            <p>Task Details</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+     <!--Upgrade Task test page-->
+    <div data-role="page" id="rts-pro" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>RTS: Projector Upgrade</h1>
+        </div>
+
+        <div data-role="content">
+            <p>Task Details</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+     <!--Indirect Task test page-->
+    <div data-role="page" id="hq-ih1" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>HQ: In House</h1>
+        </div>
+
+        <div data-role="content">
+            <p>Task Details</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--About page-->
+    <div data-role="page" id="about" data-theme="b" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>About</h1>
+        </div>
+
+        <div data-role="content">
+            <p>Procurement Task Manager enables you to easily keep up with daily procurement tasks by storing important task details all in one place.  With Procurement Task Manager, you can Add and Edit task information with ease, closeout tasks upon completion, and quickly search through your saved tasks to find just what you are looking for.</p>
+            <p>Receive dozens of email requests every day for new equipment and materials? Then this app is for you!  Just enter your task details into the task form, and lose the email trail forever.  
+            <p>Have dozens of sticky notes piled on your desk?  Never ask yourself where you jotted down a part number again! </p>
+            </p>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Newsfeed-->
+    <div data-role="page" id="news" data-theme="b" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>News</h1>
+        </div>
+
+        <div data-role="content">
+            <p><a href="http://www.iaccm.com/news/contractingexcellence/?storyid=678">Contracting Excellence: Global Strategies for Superior Results </a></p>
+            <p><a href="http://www.defenseindustrydaily.com">Defense Industry Daily</a></p>
+            <p><a href="http://www.procurementleaders.com/magazine-library">Procurement Leaders: Forum 2012</a></p>
+            <p><a href="http://procurement-resources.com">Procurement Resources: Excellence in Public Sector Procurement & Training </a></p>
+            <p><a href="http://www.sdcexec.com/topics/sourcing-procurement"> Supply & Demand Chain Executive</a></p>
+            
+            
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    <!-- JavaScript under here -->
+    
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+
+</body>
+</html>
+ 
