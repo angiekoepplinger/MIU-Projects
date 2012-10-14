@@ -1,7 +1,7 @@
 /*Angela Koepplinger
 MIU: Term 1210
-Project 3: Web App
-Date: 10/11/12*/
+Project 4: Web App
+Date: 10/15/12*/
 
 
 
@@ -82,50 +82,13 @@ function storeData(key){
 
 /*var autofillData = function (){
 	 
-};  */
-
-function getData(){
-		toggleControls("on");
-		if(localStorage.length ===0){
-			alert("There is no data in Local Storage, default data was added.");
-			autoFillData();
-		};
-		//Write Data from Local Storage to the browser.
-		var makeDiv = document.createElement("div");
-		makeDiv.setAttribute("id", "items");
-		var makeUl = document.createElement("ul");
-		makeDiv.appendChild(makeUl);
-		
-		for(var i = 0, j=localStorage.length; i<j; i++){ 									//Loop through the local storage and grab the id(key) & associated object(value)
-			if(Number(localStorage.key(i)/1) === Number(localStorage.key(i))) {			//Safari 6 adds info to the local storage, convert strings to numbers to exclude safari storage from our data.
-				var makeli = document.createElement("li");
-				var linksLi = document.createElement("li");	//NEW
-				makeUl.appendChild(makeli);
-				var key = localStorage.key(i);											//id associated with form submission object
-				var value = localStorage.getItem(key);						//the object, in this case: var item{}
-				var object = JSON.parse(value);												//convert string from local storage back into an object using JSON.parse!
-				var makeSubUl = document.createElement("ul");
-				makeli.appendChild(makeSubUl);
-				getImage(object.purchaseType[1], makeSubUl);
-				for(var x in object){														//example: for "item.purchaseType"(key) in the object
-					var makeSubli = document.createElement("li");
-					makeSubUl.appendChild(makeSubli);
-					//get the "value" of the data in our object. The value of our key is an array.
-					//[x] = key,  [0] = label in array, [1] = value in array.
-					var objSubText = object[x][0]+ " " +object[x][1];	
-					makeSubli.innerHTML = objSubText;	
-					makeSubUl.appendChild(linksLi);	//NEW  edit link & delete link
-				};
-			makeItemLinks(localStorage.key(i), linksLi);	//Create our edit and delete buttons/link for each item in local storage.
-			};
-					
-		};
-		document.body.appendChild(makeDiv);
 };
 
+var getData = function(){
 
+};
 
-/*var storeData = function(data){
+var storeData = function(data){
 	
 }; 
 
