@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<!--Angela Koepplinger-->
+<!--MIU: Term 1210-->
+<<<<<<< HEAD
+<!--Project 2: Gold App-->
+<!--Date: 10/04/12-->
+=======
+<!--Project 3: Gold App-->
+<!--Date: 10/08/12-->
+>>>>>>> gh-pages
+
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    
+    <title>Procurement Task Manager</title>
+    
+    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Mobile IE needs ClearType for smoothing fonts -->
+    <meta http-equiv="cleartype" content="on">
+    
+    <!-- StyleSheets under here -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jqmstyles.css" />
+
+
+    <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+    <script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+    <!--Home Page-->
+    <div data-role="page" id="home">
+
+        <div data-role="header" data-position="fixed">
+            <h1>Task Manager</h1>
+        </div>
+
+        <div data-role="content" id="cta" >
+<<<<<<< HEAD
+            <a href="additem.html" data-ajax="false"<a href="#"><img src="images/cta.png"></a>
+=======
+            <a href="#addtask" data-ajax="false"<a href="#"><img src="images/cta.png"></a>
+>>>>>>> gh-pages
+        </div>
+
+        <div data-role="content" >
+            <ul data-role="listview" data-filter="true" data-inset="false" class="ui-listview" >
+                <li data-role="list-divider">Browse...</li>               
+                <li><a href= "#maintenance" data-icon="arrow-r" data-iconpos="right">
+                    <img src="images/Maintenance.png" class="ui-li-thumb"/>Maintenance</a>
+                </li>
+                <li><a href= "#product" data-icon="arrow-r" data-iconpos="right">
+                    <img src="images/Product.png" class="ui-li-thumb"/>Product</a>
+                </li>
+                <li><a href= "#rawmaterials" data-icon="arrow-r" data-iconpos="right">
+                    <img src="images/Raw Materials.png" class="ui-li-thumb"/>Raw Materials</a>
+                </li>
+                <li><a href= "#upgrade" data-icon="arrow-r" data-iconpos="right">
+                    <img src="images/Upgrade.png" class="ui-li-thumb"/>Upgrade</a></li>
+                <li><a href= "#indirect" data-icon="arrow-r" data-iconpos="right">
+                    <img src="images/Indirect.png" class="ui-li-thumb"/>Indirect</a></li>
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed">       
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#about" data-icon="info">About</a></li>
+                    <li><a href="#news"  data-icon="grid">Newsfeed</a></li>
+<<<<<<< HEAD
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+=======
+                    <li><a href="#addtask" data-ajax="false" data-icon="plus">New Task</a></li>
+>>>>>>> gh-pages
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+     <!--Maintenance page-->
+    <div data-role="page" id="maintenance" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Maintenance</h1>
+        </div>
+
+        <div data-role"content">
+            <div data-role="collapsible-set" >
+
+                <div data-role="collapsible" data-theme="c">
+                    <h4>TES: TES/SM</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+            
+                <div data-role="collapsible" data-theme="c">
+                    <h4>RMM: RMM/SM</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+                
+                <div data-role="collapsible" data-theme="c">
+                    <h4>TES: TES/SM</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+
+                <div data-role="collapsible" data-theme="c">
+                    <h4>MIT: MIT/SM</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+<<<<<<< HEAD
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+=======
+                    <li><a href="#addtask" data-ajax="false" data-icon="plus">New Task</a></li>
+>>>>>>> gh-pages
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Product Page-->
+    <div data-role="page" id="product" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Product</h1>
+        </div>
+
+        <div data-role"content">
+            <div data-role="collapsible-set">
+
+                <div data-role="collapsible" data-theme="c">
+                    <h4>CA: CA/SD</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+            
+                <div data-role="collapsible" data-theme="c">
+                    <h4>HUB: HUB/SRVRS</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+                
+                <div data-role="collapsible" data-theme="c">
+                    <h4>TES: Video CODEC</h4>           
+                    <p><a href="#">Task Details</a><p>
+                </div>
+
+                <div data-role="collapsible" data-theme="c">
+                    <h4>TES: Mobile Node 4</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+<<<<<<< HEAD
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+=======
+                    <li><a href="#addtask" data-ajax="false" data-icon="plus">New Task</a></li>
+>>>>>>> gh-pages
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Raw Materials Page-->
+    <div data-role="page" id="rawmaterials" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Raw Materials</h1>
+        </div>
+
+        <div data-role"content">
+            <div data-role="collapsible-set">
+
+                <div data-role="collapsible" data-theme="c">
+                    <h4>BLD: N/A</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+            
+                <div data-role="collapsible" data-theme="c">
+                    <h4>BLD: N/A</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+                
+                <div data-role="collapsible" data-theme="c">
+                    <h4>BLD: N/A</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+
+                <div data-role="collapsible" data-theme="c">
+                    <h4>BLD: N/A</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+<<<<<<< HEAD
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+=======
+                    <li><a href="#addtask" data-ajax="false" data-icon="plus">New Task</a></li>
+>>>>>>> gh-pages
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Upgrade Page-->
+    <div data-role="page" id="upgrade" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Upgrade</h1>
+        </div>
+
+        <div data-role"content">
+            <div data-role="collapsible-set">
+
+                <div data-role="collapsible" data-theme="c">
+                    <h4>RTS: Projector Upgrade</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+            
+                <div data-role="collapsible" data-theme="c">
+                    <h4>HUB: Firewall Upgrade</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+                
+                <div data-role="collapsible" data-theme="c">
+                    <h4>HUB: Rack/UPG</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+
+                <div data-role="collapsible" data-theme="c">
+                    <h4>TES: KVMoIP Upgrade</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+<<<<<<< HEAD
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+=======
+                    <li><a href="#addtask" data-ajax="false" data-icon="plus">New Task</a></li>
+>>>>>>> gh-pages
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Indirect-->
+    <div data-role="page" id="indirect" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Indirect</h1>
+        </div>
+
+        <div data-role"content">
+            <div data-role="collapsible-set">
+
+                <div data-role="collapsible" data-theme="c">
+                    <h4>HQ: In House</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+            
+                <div data-role="collapsible" data-theme="c">
+                    <h4>HQ: In House</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+                
+                <div data-role="collapsible" data-theme="c">
+                    <h4>HQ: In House</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+
+                <div data-role="collapsible" data-theme="c">
+                    <h4>HQ: In House</h4>
+                    <p><a href="#">Task Details</a><p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+<<<<<<< HEAD
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+=======
+                    <li><a href="#addtask" data-ajax="false" data-icon="plus">New Task</a></li>
+>>>>>>> gh-pages
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--About page-->
+    <div data-role="page" id="about" data-theme="b" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>About</h1>
+        </div>
+
+        <div data-role="content">
+            <p>Procurement Task Manager enables you to easily keep up with daily procurement tasks by storing important task details all in one place.  With Procurement Task Manager, you can Add and Edit task information with ease, closeout tasks upon completion, and quickly search through your saved tasks to find just what you are looking for.</p>
+            <p>Receive dozens of email requests every day for new equipment and materials? Then this app is for you!  Just enter your task details into the task form, and lose the email trail forever.  
+            <p>Have dozens of sticky notes piled on your desk?  Never ask yourself where you jotted down a part number again! </p>
+            </p>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+<<<<<<< HEAD
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+=======
+                    <li><a href="#addtask" data-ajax="false" data-icon="plus">New Task</a></li>
+>>>>>>> gh-pages
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Newsfeed-->
+    <div data-role="page" id="news" data-theme="b" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>News</h1>
+        </div>
+
+        <div data-role="content">
+            <p><a href="http://www.iaccm.com/news/contractingexcellence/?storyid=678">Contracting Excellence: Global Strategies for Superior Results </a></p>
+            <p><a href="http://www.defenseindustrydaily.com">Defense Industry Daily</a></p>
+            <p><a href="http://www.procurementleaders.com/magazine-library">Procurement Leaders: Forum 2012</a></p>
+            <p><a href="http://procurement-resources.com">Procurement Resources: Excellence in Public Sector Procurement & Training </a></p>
+            <p><a href="http://www.sdcexec.com/topics/sourcing-procurement"> Supply & Demand Chain Executive</a></p>
+<<<<<<< HEAD
+            
+            
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="additem.html" data-ajax="false" data-icon="plus">New Task</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+=======
+        </div>
+    </div>      
+            
+        
+
+    <div data-role="page" id="addtask" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+             <h1>Add Task</h1>
+        </div>
+
+        <div data-role="content" >
+            <form action="#" method="post" id="procurementTask">
+            <ul data-role="listview" data-inset="true">
+                <li data-role="list-divider">Purchase Requirement</li>
+                <fieldset>
+                    <div data-role="fieldcontain">
+                        <label for="purchase-type">*Purchase Type:</label>
+                        <select name="purchase-type" id="purchase-type" data-native-menu="false" class="required" data-mini="true">
+                            <option value="selectatype" >-- Select A Type --</option>
+                            <option value="maintenance">Maintenance</option>
+                            <option value="product">Product</option>
+                            <option value="raw-materials">Raw Materials</option>
+                            <option value="Upgrade">Upgrade</option>
+                            <option value="indirect">Indirect</option>
+                        </select>
+                    </div>
+                    
+                    <div data-role="fieldcontain">
+                        <label for="workorder">*Work Order:</label>
+                        <input type="text" name="workorder" id="workorder" class="required" placeholder="SRVRS UPG"/>
+                    </div>
+
+                    <div data-role="fieldcontain">
+                        <label for="supportsite">*Support Site:</label>
+                        <input type="text" name="supportsite" id="supportsite" class="required" placeholder="TES"/>
+                    </div>
+                </fieldset>
+            </ul>
+
+
+                
+            <ul data-role="listview" data-inset="true">
+                <li data-role="list-divider">Item information</li>
+                <fieldset>
+                    <div data-role="fieldcontain">
+                        <label for="item-type">*Item Type:</label>
+                        <select name="item-type" id="item-type" data-native-menu="false" class="required" data-mini="true">
+                            <option value="selectatype">-- Select A Type --</option>
+                            <option value="hardware">Hardware</option>
+                            <option value="software">Software</option>
+                            <option value="support-contract">Support Contract</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div data-role="fieldcontain">
+                       <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                            <legend>Asset?:</legend>
+                            <input type="radio" value="yes" name="asset-role-yes" id="asset-role-yes" />
+                            <label for="asset-role-yes">Yes</label>
+                            <input type="radio" value="yes" name="asset-role-no" id="asset-role-no"/>
+                            <label for="asset-role-no">No</label>
+                       </fieldset>
+                    </div>
+
+                    <div data-role="fieldcontain">
+                        <label for="manufacturer">Manufacturer:</label>
+                        <input type="text" name="manufacturer" id="manufacturer" placeholder="Cisco Systems"/>
+                    </div>
+
+                    <div data-role="fieldcontain">
+                        <label for="partnumber">Part Number:</label>
+                        <input type="text" name="partnumber" id="partnumber" placeholder="WS-C2960"/>
+                    </div>
+
+                    <div data-role="fieldcontain">
+                        <label for="qty">*Qty:</label>
+                        <input type="text" name="qty" id="qty" class="required number" placeholder="5"/>
+                    </div>
+                </fieldset>
+            </ul>
+            <ul data-role="listview" data-inset="true">
+                <li data-role="list-divider">Additional Information</li>
+                <fieldset>
+                    <div data-role="fieldcontain">
+                        <label for="urgency">Urgency:</label>
+                        <input type="range" name="urgency" id="urgency" value="5" min="0" max="10" data-mini="true"/>
+                    </div>
+
+                    <div data-role="fieldcontain">
+                       <fieldset data-role="controlgroup" >
+                            <legend>Mgmt Approval:</legend>
+                            <input type="checkbox" checked="checked" value="required" name="mgmt-approval" id="mgmt-approval-1"/>
+                            <label for="mgmt-approval-1">Required</label>
+                            <input type="checkbox" value="requested" name="mgmt-approval" id="mgmt-approval-2" />
+                            <label for="mgmt-approval-2">Requested</label>
+                            <input type="checkbox" value="approved" name="mgmt-approval" id="mgmt-approval-3" />
+                            <label for="mgmt-approval-3">Approved</label>
+                       </fieldset>
+                    </div>
+
+                    <div data-role="fieldcontain">
+                       <fieldset data-role="controlgroup" >
+                            <legend>*R&R Request:</legend>
+                            <input type="radio" value="requested" name="rr-request" id="rr-request-1" class="required"/>
+                            <label for="rr-request-1">Required</label>
+                            <input type="radio" value="notrequired" name="rr-request" id="rr-request-2" />
+                            <label for="rr-request-2">Not Required</label>
+                       </fieldset>
+                    </div>
+
+
+                    <div data-role="fieldcontain">
+                        <label for="daterequired">Date Required:</label>
+                        <input type="date" name="daterequired" id="daterequired" class="required date" value="2013-01-01"/>
+                    </div>
+
+                    <div data-role="fieldcontain">
+                        <label for="datecompleted">Date Completed:</label>
+                        <input type="date" name="datecompleted" id="datecompleted" placeholder="YYYY-MM-DD"/>
+                    </div>
+
+                   <div data-role="fieldcontain">
+                        <label for="notes">Notes:</label>
+                        <textarea id="notes" name="notes"></textarea>
+                    </div>
+                </fieldset>
+            </ul>
+
+                    <div data-role="fieldcontain">   
+                        <input type="submit" value="Add Purchase Task" id="addptaskbutton" data-theme="b"/ data-ajax="false">
+                        <input type="reset" value="Reset" data-theme="c"/>
+                    </div>
+                  
+                <!--<a href="#purchasetaskerrors" id="pterrorslink" data-rel="dialog" data-transition="pop">Open Errors</a> -->
+
+            </form>
+        </div>
+    </div>
+
+    <!--<div data-role="dialog" id="purchasetaskerrors">
+
+        <div data-role="header" data-position="fixed" >
+            <h1>Missing Fields</h1>
+        </div>
+
+        <div data-role="content">
+            <ul>
+                <li>Test.</li>
+            </ul>
+        </div>
+    </div> -->
+ 
+>>>>>>> gh-pages
+
+
+    
+
+    <!-- JavaScript under here -->
+    
+<<<<<<< HEAD
+    <script src="js/json.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+
+</body>
+</html>
+ 
+=======
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/json.js" type="text/javascript"></script>
+
+</body>
+</html>
+>>>>>>> gh-pages
