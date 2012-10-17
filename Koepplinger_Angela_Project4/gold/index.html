@@ -30,7 +30,7 @@
 </head>
 <body>
     <!--Home Page-->
-    <div data-role="page" id="home">
+    <div data-role="page" id="home" >
 
         <div data-role="header" data-position="fixed">
             <h1>Task Manager</h1>
@@ -41,7 +41,7 @@
         </div>
 
         <div data-role="content" >
-            <ul data-role="listview" data-filter="true" data-inset="false" class="ui-listview" >
+            <ul data-role="listview" data-filter="true" data-inset="true" class="ui-listview" >
                 <li data-role="list-divider">Browse...</li>               
                 <li><a href= "#maintenance" data-icon="arrow-r" data-iconpos="right">
                     <img src="images/Maintenance.png" class="ui-li-thumb"/>Maintenance</a>
@@ -72,8 +72,8 @@
     </div>
 
      <!--Maintenance page-->
-    <div data-role="page" id="maintenance" data-add-back-btn="true">
-        <div data-role="header" data-position="fixed">
+    <div data-role="page" id="maintenance" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-position="fixed" >
              <h1>Maintenance</h1>
         </div>
 
@@ -476,9 +476,8 @@
     
 
     <!-- JavaScript under here -->
-    
-    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
     <script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
     <script src="js/main.js" type="text/javascript"></script>
     <script src="js/json.js" type="text/javascript"></script>

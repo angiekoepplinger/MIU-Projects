@@ -47,3 +47,15 @@ span{
 	color: ;
 }
 
+div#cta.ui-content.ui-body-d {
+width: 320px;
+margin: 0 auto;
+padding:0;
+float: center;
+}
+
+.ui-mobile-viewport.ui-overlay-c{
+	color: 000000;
+
+}
+
