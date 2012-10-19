@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //Angela Koepplinger
 //MIU: Term 1210
 // Project 2: Gold App
@@ -83,11 +84,16 @@ MIU: Term 1210
 Project 3: Web App
 Date: 10/11/12*/
 =======
+=======
+>>>>>>> working-branch
 /*Angela Koepplinger
 MIU: Term 1210
 Project 4: Web App
 Date: 10/15/12*/
+<<<<<<< HEAD
 >>>>>>> gh-pages
+=======
+>>>>>>> working-branch
 
 
 
@@ -131,9 +137,12 @@ $(document).on('pageinit', function(){
 
 function storeData(key){
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> gh-pages
 =======
 >>>>>>> gh-pages
+=======
+>>>>>>> working-branch
 		//If there is no key, this means this is a brand new item and we need a new key
 		if(!key){
 		var id = Math.floor(Math.random()*100000001);
@@ -145,6 +154,7 @@ function storeData(key){
 	};
 		//Gather up all of our form field values and store in an object.
 		//Object properties contain array with the form label and input value.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		getSelectedRadio();
@@ -167,6 +177,8 @@ function storeData(key){
 =======
 =======
 >>>>>>> gh-pages
+=======
+>>>>>>> working-branch
 		//getSelectedRadio();
 
 		var item           			= {};
@@ -185,15 +197,19 @@ function storeData(key){
 			item.completionDate		= ["Completion Date:", $("#datecompleted").val()];
 			item.notes			 	= ["Notes:", $("#notes").val()];
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> gh-pages
 =======
 >>>>>>> gh-pages
+=======
+>>>>>>> working-branch
 
 			//Save data into Local Storage: Use Stringify to convert our object to a string.
 			localStorage.setItem(id, JSON.stringify(item));
 			alert("Purchase Task Saved!");
 	};
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -448,6 +464,8 @@ function storeData(key){
 =======
 =======
 >>>>>>> gh-pages
+=======
+>>>>>>> working-branch
 	//The functions below can go inside or outside the pageinit function for the page in which it is needed.
 
 /*var autofillData = function (){
@@ -472,6 +490,9 @@ var clearLocal = function(){
 */
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> gh-pages
 =======
 >>>>>>> gh-pages
+=======
+>>>>>>> working-branch

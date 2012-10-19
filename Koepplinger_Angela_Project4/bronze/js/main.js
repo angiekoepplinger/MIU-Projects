@@ -2,6 +2,7 @@
 //MIU: Term 1210
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Project 2: Bronze App
 //Date: 10/04/12
 =======
@@ -12,6 +13,10 @@
 // Project 4: Bronze App
 //Date: 10/15/12
 >>>>>>> gh-pages
+=======
+// Project 4: Bronze App
+//Date: 10/15/12
+>>>>>>> working-branch
 
 //test push to working
 
@@ -283,11 +288,14 @@ window.addEventListener("DOMContentLoaded", function(){
 		var getSupportSite = ge("supportSite");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var getDateRequired =  ge("dateRequired");
 =======
 >>>>>>> gh-pages
 =======
 >>>>>>> gh-pages
+=======
+>>>>>>> working-branch
 
 		//Reset Error Messages
 		errorMsg.innerHTML = "";
@@ -297,11 +305,14 @@ window.addEventListener("DOMContentLoaded", function(){
 		getSupportSite.style.border = "1px solid black";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		getDateRequired.style.border = "1px solid black";
 =======
 >>>>>>> gh-pages
 =======
 >>>>>>> gh-pages
+=======
+>>>>>>> working-branch
 
 		//Get Error Messages
 		var messageArray = [];
@@ -333,6 +344,7 @@ window.addEventListener("DOMContentLoaded", function(){
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		//Date Required Validation
 		if(getDateRequired.value ==="") {
 			var dateRequiredError = "Please enter Date Required!";
@@ -344,6 +356,8 @@ window.addEventListener("DOMContentLoaded", function(){
 >>>>>>> gh-pages
 =======
 >>>>>>> gh-pages
+=======
+>>>>>>> working-branch
 		// email Validation
 		// var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+ge/;
 		// if(!re.exec(getEmail.value))){

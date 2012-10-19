@@ -2,6 +2,7 @@
 //MIU: Term 1210
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Project 2: Gold App
 //Date: 10/04/12
 =======
@@ -12,6 +13,10 @@
 // Project 4: Gold App
 //Date: 10/15/12
 >>>>>>> gh-pages
+=======
+// Project 4: Gold App
+//Date: 10/15/12
+>>>>>>> working-branch
 
 
 var json = {
