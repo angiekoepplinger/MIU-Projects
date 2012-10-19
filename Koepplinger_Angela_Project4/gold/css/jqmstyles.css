@@ -9,7 +9,7 @@ Date: 10/15/12
 /* GENERAL-ALL PAGES */
 
 .ui-page{
-	background: -webkit-linear-gradient(left, #aaaaaa 0%,#cecece 15%,#e5e5e5 33%,#e5e5e5 71%,#cecece 85%,#aaaaaa 100%);
+	background: -webkit-linear-gradient(left, #919191 0%,#b7b7b7 23%,#d8d8d8 49%,#b7b7b7 76%,#919191 100%);
 }
 
 input.ui-input-text, textarea.ui-input-text{
@@ -93,6 +93,7 @@ li.ui-li.ui-li-divider.ui-bar-b.ui-corner-top.ui-corner-bottom{
 	font-size: 14px;
 }
 
+
 #fieldset1{
 	padding: 0 5px 0 5px;
 }
@@ -119,4 +120,12 @@ textarea:focus, input:focus {
 	color: #000000;
 }
 
+input[type="text"]:enabled
+{
+	color: #000000;
+} 
+a.ui-link{
+	color: #CEE7ED;
+	text-shadow: none
+}
 
