@@ -5,6 +5,36 @@ Project 4: Gold App
 Date: 10/15/12
 */
 
+
+/* GENERAL-ALL PAGES */
+
+.ui-page{
+	background: -webkit-linear-gradient(left, #919191 0%,#b7b7b7 23%,#d8d8d8 49%,#b7b7b7 76%,#919191 100%);
+}
+
+input.ui-input-text, textarea.ui-input-text{
+	font-size: 14px;
+	line-height: 1.2;
+	color: #FFF000;
+}
+
+div.ui-header.ui-bar-a.ui-header-fixed.slidedown{
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+
+div.ui-navbar.ui-mini.ui-footer-fixed.slideup{
+	background-color: #676767;
+}
+
+div.ui-header{
+	background: #3b3b3b;
+}
+
+
+
+/* HOME */
 img.ui-li-thumb{
 	height: 40px;
 	width: 40px; 
@@ -14,36 +44,88 @@ img.ui-li-thumb{
 .ui-li .ui-btn-text a.ui-link-inherit, .ui-li-static.ui-li{
 	min-height: 40px;
 	padding: 0;
-	margin-left: 50px
+	margin-left: 50px;
+	vertical-align: middle
 }
-#cta {
-	margin: 0px;
+div#cta.ui-content {
+	width: 320px;
+	margin: 0 auto;
+	padding:0;
 	margin-bottom: -3px;
-	padding: 0px;
+	float: center;
+	display: block;
 }
 
 .ui-listview-filter.ui-bar-c{
 	height:80%;
 }
 
-input.ui-input-text, textarea.ui-input-text{
-	font-size: 14px;
-	line-height: 1.2;
-	color: FFF000;
+div#home.ui-page.ui-body-c{
+	color: #d0e7f4;
 }
 
+
+div.ul.ui-listview{
+	border: #000000;
+}
+
+li.ui-block-b{
+	background: #525252;
+}
+
+
+
+
+
+/* FORM */
 label.error{
 	display:block; 
 	margin:10px 0;
 	color:#cc0000;
 }
 
-input#addptaskbutton.ui-btn-hidden{
-	margin-bottom: 10px;
+ul.ui-listview-inset.ui-corner-all.ui-shadow{	/*fieldset*/
+	background: #E8E8E8
 }
 
-span{
-	text size: 10px;
-	color: ;
+li.ui-li.ui-li-divider.ui-bar-b.ui-corner-top.ui-corner-bottom{
+	background: #CB5D28;
+	font-size: 14px;
+}
+
+
+#fieldset1{
+	padding: 0 5px 0 5px;
+}
+
+#fieldset2{
+	padding: 0 5px 0 5px;
+}
+#fieldset3{
+	padding: 0 5px 0 5px;
+}
+
+input#urgency{
+	color: #000000;
+}
+input#daterequired{
+	color: #000000;
+}
+
+input, select, textarea{
+    color: #000000;
+}
+
+textarea:focus, input:focus {
+	color: #000000;
+}
+
+input[type="text"]:enabled
+{
+	color: #000000;
+} 
+a.ui-link{
+	color: #CEE7ED;
+	text-shadow: none
 }
 
