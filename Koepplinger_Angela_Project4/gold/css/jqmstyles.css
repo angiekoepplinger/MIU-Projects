@@ -1,22 +1,6 @@
 /* 
 Angela Koepplinger
 MIU: Term 1210;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Project 2: Gold App
-Date: 10/04/12
-=======
-Project 3: Gold App
-Date: 10/08/12
->>>>>>> gh-pages
-=======
-Project 4: Gold App
-Date: 10/15/12
->>>>>>> gh-pages
-*/
-
-=======
 Project 4: Gold App
 Date: 10/15/12
 */
@@ -25,7 +9,7 @@ Date: 10/15/12
 /* GENERAL-ALL PAGES */
 
 .ui-page{
-	background: -webkit-linear-gradient(left, #aaaaaa 0%,#cecece 15%,#e5e5e5 33%,#e5e5e5 71%,#cecece 85%,#aaaaaa 100%);
+	background: -webkit-linear-gradient(left, #919191 0%,#b7b7b7 23%,#d8d8d8 49%,#b7b7b7 76%,#919191 100%);
 }
 
 input.ui-input-text, textarea.ui-input-text{
@@ -51,7 +35,6 @@ div.ui-header{
 
 
 /* HOME */
->>>>>>> working-branch
 img.ui-li-thumb{
 	height: 40px;
 	width: 40px; 
@@ -61,14 +44,6 @@ img.ui-li-thumb{
 .ui-li .ui-btn-text a.ui-link-inherit, .ui-li-static.ui-li{
 	min-height: 40px;
 	padding: 0;
-<<<<<<< HEAD
-	margin-left: 50px
-}
-#cta {
-	margin: 0px;
-	margin-bottom: -3px;
-	padding: 0px;
-=======
 	margin-left: 50px;
 	vertical-align: middle
 }
@@ -79,26 +54,12 @@ div#cta.ui-content {
 	margin-bottom: -3px;
 	float: center;
 	display: block;
->>>>>>> working-branch
 }
 
 .ui-listview-filter.ui-bar-c{
 	height:80%;
 }
 
-<<<<<<< HEAD
-input.ui-input-text, textarea.ui-input-text{
-	font-size: 14px;
-	line-height: 1.2;
-	color: FFF000;
-}
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> gh-pages
-
-=======
 div#home.ui-page.ui-body-c{
 	color: #d0e7f4;
 }
@@ -117,28 +78,12 @@ li.ui-block-b{
 
 
 /* FORM */
->>>>>>> working-branch
 label.error{
 	display:block; 
 	margin:10px 0;
 	color:#cc0000;
 }
 
-<<<<<<< HEAD
-input#addptaskbutton.ui-btn-hidden{
-	margin-bottom: 10px;
-}
-
-span{
-	text size: 10px;
-	color: ;
-}
-
-<<<<<<< HEAD
->>>>>>> gh-pages
-=======
->>>>>>> gh-pages
-=======
 ul.ui-listview-inset.ui-corner-all.ui-shadow{	/*fieldset*/
 	background: #E8E8E8
 }
@@ -147,6 +92,7 @@ li.ui-li.ui-li-divider.ui-bar-b.ui-corner-top.ui-corner-bottom{
 	background: #CB5D28;
 	font-size: 14px;
 }
+
 
 #fieldset1{
 	padding: 0 5px 0 5px;
@@ -174,5 +120,12 @@ textarea:focus, input:focus {
 	color: #000000;
 }
 
+input[type="text"]:enabled
+{
+	color: #000000;
+} 
+a.ui-link{
+	color: #CEE7ED;
+	text-shadow: none
+}
 
->>>>>>> working-branch
