@@ -1,7 +1,12 @@
 /*Angela Koepplinger
 MIU: Term 1210
+<<<<<<< HEAD
 Project 3: Web App
 Date: 10/10/12*/
+=======
+Project 4: Web App
+Date: 10/15/12*/
+>>>>>>> gh-pages
 
 
 

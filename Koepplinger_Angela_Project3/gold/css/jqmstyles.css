@@ -1,13 +1,8 @@
 /* 
 Angela Koepplinger
 MIU: Term 1210;
-<<<<<<< HEAD
-Project 2: Gold App
-Date: 10/04/12
-=======
 Project 3: Gold App
 Date: 10/08/12
->>>>>>> gh-pages
 */
 
 img.ui-li-thumb{
@@ -36,8 +31,6 @@ input.ui-input-text, textarea.ui-input-text{
 	line-height: 1.2;
 	color: FFF000;
 }
-<<<<<<< HEAD
-=======
 
 label.error{
 	display:block; 
@@ -54,4 +47,3 @@ span{
 	color: ;
 }
 
->>>>>>> gh-pages

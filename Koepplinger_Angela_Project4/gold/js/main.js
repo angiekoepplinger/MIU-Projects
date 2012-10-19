@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 //Angela Koepplinger
 //MIU: Term 1210
 // Project 2: Gold App
@@ -81,6 +82,12 @@ window.addEventListener("DOMContentLoaded", function(){
 MIU: Term 1210
 Project 3: Web App
 Date: 10/11/12*/
+=======
+/*Angela Koepplinger
+MIU: Term 1210
+Project 4: Web App
+Date: 10/15/12*/
+>>>>>>> gh-pages
 
 
 
@@ -123,6 +130,9 @@ $(document).on('pageinit', function(){
 });
 
 function storeData(key){
+<<<<<<< HEAD
+>>>>>>> gh-pages
+=======
 >>>>>>> gh-pages
 		//If there is no key, this means this is a brand new item and we need a new key
 		if(!key){
@@ -135,6 +145,7 @@ function storeData(key){
 	};
 		//Gather up all of our form field values and store in an object.
 		//Object properties contain array with the form label and input value.
+<<<<<<< HEAD
 <<<<<<< HEAD
 		getSelectedRadio();
 
@@ -154,6 +165,8 @@ function storeData(key){
 			item.completionDate		= ["Completion Date:", ge("completionDate").value];
 			item.notes			 	= ["Notes:", ge("notes").value];
 =======
+=======
+>>>>>>> gh-pages
 		//getSelectedRadio();
 
 		var item           			= {};
@@ -171,6 +184,9 @@ function storeData(key){
 			item.dateRequired 		= ["Date Required:", $("#daterequired").val()];
 			item.completionDate		= ["Completion Date:", $("#datecompleted").val()];
 			item.notes			 	= ["Notes:", $("#notes").val()];
+<<<<<<< HEAD
+>>>>>>> gh-pages
+=======
 >>>>>>> gh-pages
 
 			//Save data into Local Storage: Use Stringify to convert our object to a string.
@@ -178,6 +194,7 @@ function storeData(key){
 			alert("Purchase Task Saved!");
 	};
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 	function getData(){
@@ -429,6 +446,8 @@ function storeData(key){
 	save.addEventListener("click", validate);
 });
 =======
+=======
+>>>>>>> gh-pages
 	//The functions below can go inside or outside the pageinit function for the page in which it is needed.
 
 /*var autofillData = function (){
@@ -452,4 +471,7 @@ var clearLocal = function(){
 };
 */
 	
+<<<<<<< HEAD
+>>>>>>> gh-pages
+=======
 >>>>>>> gh-pages

@@ -1,11 +1,16 @@
 //Angela Koepplinger
 //MIU: Term 1210
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Project 2: Bronze App
 //Date: 10/04/12
 =======
 // Project 3: Bronze App
 //Date: 10/08/12
+>>>>>>> gh-pages
+=======
+// Project 4: Bronze App
+//Date: 10/15/12
 >>>>>>> gh-pages
 
 //test push to working
@@ -277,7 +282,10 @@ window.addEventListener("DOMContentLoaded", function(){
 		var getWorkOrder = ge("workOrder");
 		var getSupportSite = ge("supportSite");
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var getDateRequired =  ge("dateRequired");
+=======
+>>>>>>> gh-pages
 =======
 >>>>>>> gh-pages
 
@@ -288,7 +296,10 @@ window.addEventListener("DOMContentLoaded", function(){
 		getWorkOrder.style.border = "1px solid black";
 		getSupportSite.style.border = "1px solid black";
 <<<<<<< HEAD
+<<<<<<< HEAD
 		getDateRequired.style.border = "1px solid black";
+=======
+>>>>>>> gh-pages
 =======
 >>>>>>> gh-pages
 
@@ -321,6 +332,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		//Date Required Validation
 		if(getDateRequired.value ==="") {
 			var dateRequiredError = "Please enter Date Required!";
@@ -328,6 +340,8 @@ window.addEventListener("DOMContentLoaded", function(){
 			messageArray.push(dateRequiredError);
 		};
 
+=======
+>>>>>>> gh-pages
 =======
 >>>>>>> gh-pages
 		// email Validation

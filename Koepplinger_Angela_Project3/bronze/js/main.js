@@ -1,12 +1,7 @@
 //Angela Koepplinger
 //MIU: Term 1210
-<<<<<<< HEAD
-// Project 2: Bronze App
-//Date: 10/04/12
-=======
 // Project 3: Bronze App
 //Date: 10/08/12
->>>>>>> gh-pages
 
 //test push to working
 
@@ -276,10 +271,6 @@ window.addEventListener("DOMContentLoaded", function(){
 		var getItemList = ge("itemList");
 		var getWorkOrder = ge("workOrder");
 		var getSupportSite = ge("supportSite");
-<<<<<<< HEAD
-		var getDateRequired =  ge("dateRequired");
-=======
->>>>>>> gh-pages
 
 		//Reset Error Messages
 		errorMsg.innerHTML = "";
@@ -287,10 +278,6 @@ window.addEventListener("DOMContentLoaded", function(){
 		getItemList.style.border = "1px solid black";
 		getWorkOrder.style.border = "1px solid black";
 		getSupportSite.style.border = "1px solid black";
-<<<<<<< HEAD
-		getDateRequired.style.border = "1px solid black";
-=======
->>>>>>> gh-pages
 
 		//Get Error Messages
 		var messageArray = [];
@@ -320,16 +307,6 @@ window.addEventListener("DOMContentLoaded", function(){
 			messageArray.push(supportSiteError);
 		};
 
-<<<<<<< HEAD
-		//Date Required Validation
-		if(getDateRequired.value ==="") {
-			var dateRequiredError = "Please enter Date Required!";
-			getDateRequired.style.border = "1px solid red";
-			messageArray.push(dateRequiredError);
-		};
-
-=======
->>>>>>> gh-pages
 		// email Validation
 		// var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+ge/;
 		// if(!re.exec(getEmail.value))){

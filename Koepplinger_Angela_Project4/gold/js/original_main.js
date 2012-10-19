@@ -1,7 +1,12 @@
 //Angela Koepplinger
 //MIU: Term 1210
+<<<<<<< HEAD
 // Project 3: Gold App
 //Date: 10/08/12
+=======
+// Project 4: Gold App
+//Date: 10/15/12
+>>>>>>> gh-pages
 
 //test push to working
 
