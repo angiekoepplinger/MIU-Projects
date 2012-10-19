@@ -119,16 +119,4 @@ textarea:focus, input:focus {
 	color: #000000;
 }
 
-input[type="text"]:enabled
-{
-	color: #000000;
-} 
-a.ui-link{
-	color: #000000;
-	text-shadow: none
-}
-
-#ui-link{
-	color: #000000;
-}
 
