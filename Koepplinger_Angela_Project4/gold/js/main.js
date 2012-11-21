@@ -17,25 +17,8 @@ console.log(data);
 $(document).on('pageinit', function(){
 
 	var myForm = $('#procurementTask');
-	var pterrorslink = $("#pterrorslink");
-
 	myForm.validate({
-		invalidHandler: function(form, validator) {
-			pterrorslink.click();
-			
-			/*console.log(validator.submitted);
-			var html = '';
-			for(var key in validator.submitted){
-				var label = $('label[for^="'+key+'"]').not("[generated]");
-				console.log(label.text());
-				var legend = label.closest("fieldset").find(".ui-controlgroup-label");
-				var fieldName = legend.length ? legend.text() : label.text();
-				console.log(fieldName);
-				html += '<li>' + fieldName + '</li>';
-			};
-
-			$("#purchasetaskerrors ul").html(html); */
-		},
+		invalidHandler: function(form, validator) {},
 		submitHandler: function() {
 			//var data = myForm.serializeArray();
 			storeData();
@@ -77,6 +60,7 @@ function storeData(key){
 			localStorage.setItem(id, JSON.stringify(item));
 			alert("Purchase Task Saved!");
 	};
+	
 
 	//The functions below can go inside or outside the pageinit function for the page in which it is needed.
 
@@ -86,7 +70,7 @@ function storeData(key){
 
 var getData = function(){
 
-};
+}; 
 
 var storeData = function(data){
 	
@@ -98,6 +82,6 @@ var	deleteItem = function (){
 					
 var clearLocal = function(){
 
-};
-*/
+}; */
+
 	

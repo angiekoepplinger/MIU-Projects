@@ -313,6 +313,7 @@
         </div>
 
         <div data-role="content">
+            <P><a href="file:///Users/amkoepplinger/Google%20Drive/MIU/MIU-Projects/Koepplinger_Angela_Project4/bronze/index.html">Bronze App</a></p>
             <p><a href="http://www.iaccm.com/news/contractingexcellence/?storyid=678">Contracting Excellence: Global Strategies for Superior Results </a></p>
             <p><a href="http://www.defenseindustrydaily.com">Defense Industry Daily</a></p>
             <p><a href="http://www.procurementleaders.com/magazine-library">Procurement Leaders: Forum 2012</a></p>
@@ -332,11 +333,11 @@
             <form action="#" method="post" id="procurementTask">
             <ul data-role="listview" data-inset="true">
                 <li data-role="list-divider">Purchase Requirement</li>
-                <fieldset>
+                <fieldset id="fieldset1">
                     <div data-role="fieldcontain">
                         <label for="purchase-type">*Purchase Type:</label>
                         <select name="purchase-type" id="purchase-type" data-native-menu="false" class="required" data-mini="true" placeholder="Select A Type">
-                            <option value="selectatype" >-Select A Type-</option>
+                            <option value="Select A Type" >-Select A Type-</option>
                             <option value="maintenance">Maintenance</option>
                             <option value="product">Product</option>
                             <option value="raw-materials">Raw Materials</option>
@@ -361,11 +362,11 @@
                 
             <ul data-role="listview" data-inset="true">
                 <li data-role="list-divider">Item information</li>
-                <fieldset>
+                <fieldset id="fieldset2">
                     <div data-role="fieldcontain">
                         <label for="item-type">*Item Type:</label>
                         <select name="item-type" id="item-type" data-native-menu="false" class="required" data-mini="true">
-                            <option value="selectatype">-Select A Type-</option>
+                            <option value="">-Select A Type-</option>
                             <option value="hardware">Hardware</option>
                             <option value="software">Software</option>
                             <option value="support-contract">Support Contract</option>
@@ -401,7 +402,7 @@
             </ul>
             <ul data-role="listview" data-inset="true">
                 <li data-role="list-divider">Additional Information</li>
-                <fieldset>
+                <fieldset id="fieldset3">
                     <div data-role="fieldcontain">
                         <label for="urgency">Urgency:</label>
                         <input type="range" name="urgency" id="urgency" value="5" min="0" max="10" data-mini="true"/>
